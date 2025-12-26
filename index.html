@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Винтажные идеи проектов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f1e6; /* кремовый фон */
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23e8ddd0' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+            color: #3c2f2f; /* темно-коричневый текст */
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fefbf6; /* очень светлый крем */
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .container:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border: 1px solid #d4c0a1;
+            pointer-events: none;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #d4c0a1;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 42px;
+            color: #8b4513; /* сепия */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #a0522d;
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px;
+            color: #8b4513;
+            margin: 30px 0 15px;
+            border-left: 4px solid #d4c0a1;
+            padding-left: 15px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: #faf6ed;
+            border: 1px solid #e8ddd0;
+            border-radius: 5px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        section:before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            right: 8px;
+            bottom: 8px;
+            border: 1px solid rgba(212, 192, 161, 0.3);
+            pointer-events: none;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin: 15px 0 15px 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            border: 1px solid #d4c0a1;
+            border-radius: 3px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            filter: sepia(20%) contrast(90%);
+        }
+
+        .caption {
+            font-style: italic;
+            font-size: 14px;
+            color: #a0522d;
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #d4c0a1;
+            color: #8b4513;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Старинные идеи для проектов</h1>
+            <p class="subtitle">Вдохновение из прошлого для современных технологий</p>
+        </header>
+
+        <section id="calculator">
+            <h2>1. Винтажный калькулятор с интерфейсом</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1518137878397-1aa82c67b7df?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Винтажный калькулятор">
+                <p class="caption">Старинный металлический калькулятор 1970-х годов</p>
+            </div>
+            <p>Создайте калькулятор с интерфейсом, вдохновленным винтажными механическими калькуляторами середины XX века.</p>
+            <p>Особенности проекта:</p>
+            <ul>
+                <li>Интерфейс с металлическими кнопками и механическими переключателями</li>
+                <li>Анимации нажатия клавиш с тактильной отдачей</li>
+                <li>Звуки механических операций при вычислениях</li>
+                <li>Эффект сепии и винтажные шрифты для отображения результатов</li>
+                <li>Возможность распечатать результат на стилизованной "бумажной" ленте</li>
+            </ul>
+            <p>Технологии: HTML, CSS, JavaScript, возможно использование Canvas для анимаций.</p>
+        </section>
+
+        <section id="telegram-bot">
+            <h2>2. Телеграм бот с историческими фотографиями</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1519638399535-1b036603ac77?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Старинный фотоаппарат">
+                <p class="caption">Классический фотоаппарат для архивных снимков</p>
+            </div>
+            <p>Разработайте телеграм-бота, который отправляет пользователям исторические фотографии из разных эпох.</p>
+            <p>Особенности проекта:</p>
+            <ul>
+                <li>База данных с классифицированными историческими фотографиями</li>
+                <li>Возможность запроса фотографий по темам (например, "мода 1920-х", "советская техника")</li>
+                <li>Информация об историческом контексте каждой фотографии</li>
+                <li>Система рейтинга и комментариев пользователей</li>
+                <li>Режим "день в истории" с фотографией соответствующего дня</li>
+            </ul>
+            <p>Технологии: Python, API Telegram, база данных SQL или MongoDB, обработка изображений.</p>
+        </section>
+
+        <section id="macro">
+            <h2>3. Винтажный макрос для автоматизации</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1571666553496-a36c2238882c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Старая пишущая машинка">
+                <p class="caption">Классическая пишущая машинка - прообраз макросов</p>
+            </div>
+            <p>Создайте систему макросов, которая имитирует работу старых механических устройств для автоматизации задач.</p>
+            <p>Особенности проекта:</p>
+            <ul>
+                <li>Интерфейс записи и воспроизведения макросов</li>
+                <li>Стилизация под старые механические устройства (пишущие машинки, счетные машины)</li>
+                <li>Библиотека готовых макросов для стандартных задач</li>
+                <li>Система планирования выполнения макросов</li>
+                <li>Визуализация процесса выполнения с механическими анимациями</li>
+            </ul>
+            <p>Технологии: Python, возможно расширения для Office или браузеров, GUI-интерфейс (Tkinter или PyQt).</p>
+        </section>
+
+        <footer>
+            <p>© 2023 Винтажные идеи проектов | Создано с любовью к истории технологий</p>
+        </footer>
+    </div>
+</body>
+</html>
